@@ -1,11 +1,10 @@
 # Site settings
-title: *folio
+title: Amber's Profolio
 email: artemisweng@gmail.com
-description: > # this means to ignore newlines until "baseurl:"
-  Amber's Profolio
-baseurl:  # the subpath of your site, e.g. /blog/
-  /profolio/
-url:  # the base hostname & protocol for your site
+description:
+baseurl: /
+domain_name: 'http://artemisweng.com'
+url:  'http://artemisweng.com'
 github_username:  artemisweng
 
 # Build settings
@@ -25,5 +24,3 @@ collections:
   poetry:
     output: true
     permalink: /poetry/:path/
-
-
