@@ -3,8 +3,8 @@ title: Amber's Portfolio
 email: artemisweng@gmail.com
 description:
 baseurl: /
-domain_name: 'http://amberweng.com'
-url:  'http://amberweng.com'
+domain_name: 'https://amberweng.com'
+url:  'https://amberweng.com'
 github_username:  artemisweng
 
 # Build settings
