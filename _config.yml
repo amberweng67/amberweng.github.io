@@ -6,6 +6,7 @@ baseurl: /
 domain_name: 'https://amberweng.com'
 url:  'https://amberweng.com'
 github_username:  artemisweng
+repository: artemisweng/artemisweng.github.io
 
 # Build settings
 markdown: kramdown
