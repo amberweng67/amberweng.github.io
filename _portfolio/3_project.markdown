@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Project
-description: a project that redirects to another website
-img:
+title: General Assembly
+description: UX Student
+img: /img/portfolio/general_assembly.jpg
 redirect: https://unsplash.com
 ---
 
