@@ -7,7 +7,7 @@ img: /img/portfolio/cover.jpg
 
 <div class="list-box">
 		<h4>Tools</h4>
-		<p>Adobe Photoshop/Lightroom/Sketch</p>
+		<p>Adobe Photoshop, Lightroom, Sketch</p>
 </div>
 
 <p class="custom-p">Those are the visual design works I did for Chowbus and Chihuo.</p>
