@@ -5,51 +5,104 @@ description: Social Worker
 img: /img/portfolio/selfhelp.jpg
 ---
 
-Every project has a beautiful feature shocase page. It's easy to include images, in a flexible 3-column grid format. Make your photos 1/3, 2/3, or full width.
-
-To give your project a background in the portfolio page, just add the img tag to the front matter like so: 
-
-	---
-	layout: post
-	title: Project
-	description: a project with a background image
-	img: /img/12.jpg
-	---
-
-
-<div class="img_row">
-	<img class="col one" src="{{ site.baseurl }}/img/1.jpg" alt="" title="example image"/>
-	<img class="col one" src="{{ site.baseurl }}/img/2.jpg" alt="" title="example image"/>
-	<img class="col one" src="{{ site.baseurl }}/img/3.jpg" alt="" title="example image"/>
-</div>
-<div class="col three caption">
-	Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="img_row">
-	<img class="col three" src="{{ site.baseurl }}/img/5.jpg" alt="" title="example image"/>
-</div>
-<div class="col three caption">
-	This image can also have a caption. It's like magic. 
+<div class="list-box">
+		<h4>Tools</h4>
+		<p>SPSS, MS Word, MS Excel, PowerPoint</p>
 </div>
 
-You can also put regular text between your rows of images. Say you wanted to write a little bit about your project before you posted the rest of the images. You describe how you toiled, sweated, *bled* for your project, and then.... you reveal it's glory in the next row of images.
-
-
-<div class="img_row">
-	<img class="col two" src="{{ site.baseurl }}/img/6.jpg" alt="" title="example image"/>
-	<img class="col one" src="{{ site.baseurl }}/img/11.jpg" alt="" title="example image"/>
-</div>
-<div class="col three caption">
-	You can also have artistically styled 2/3 + 1/3 images, like these.
+<div class="list-box">
+		<h4>MY CONTRIBUTION</h4>
+		<p>Interview, Data Analysis, Report, Cognitive Behavioral Therapy, Social Assistance</p>
 </div>
 
+<div class="portfolio-subtitle">
+<h4>OVERVIEW</h4>
+</div>
+<p class="portfolio-p">
+Selfhelp is one of the largest and most respected not-for-profit human service agencies in the New York metropolitan area, with 27 sites offering programs throughout Manhattan, Brooklyn, Queens, the Bronx, Nassau County and Westchester. 
+</p>
+<p class="portfolio-p">
+I worked at a NYS Medicaid Program to offer comprehensive case management services for Medicaid patients at high-risk to reduce 30-day hospital readmission. 
+</p>
 
-<br/><br/><br/>
+<div class="portfolio-subtitle">
+<h4>DATA ANALYSIS</h4>
+</div>
+<p class="portfolio-p">
+We received daily discharged patients’ data from NYS Medicaid Office. I was in charge to filter and clean the data by using advanced Excel skills.
+</p>
+<div class=".img_row_custom">
+  <img
+    class="col three"
+    src="/img/portfolio/selfhelp/dataanalysis.jpg"
+    alt=""
+    title="Data Analysis"
+  />
+</div>
+<p class="portfolio-p portfolio-afterpic">
+Meanwhile, we use SPSS to monitor patient medical condition and defined patients who would be at high-risk.
+</p>
 
+<div class="portfolio-subtitle">
+<h4>INTERVIEWS</h4>
+</div>
+<p class="portfolio-p">
+After the data analysis, we had the list of patients who met our requirement of measurements. Then we reached out these patients and caregivers to conduct 30-day follow up. We provided at least 4 follow up phone calls and 1 in-home interview to each patient.     
+</p>
+<p class="portfolio-p">
+I interviewed 300+ Medicaid patients quarterly on field trips to provide cognitive behavioral therapy and social assistance. I also developed case management through a collaborative process of assessment, planning, facilitation, care coordination, evaluation, and advocacy in the interview.   
+</p>
 
-The code is simple. Just add a col class to your image, and another class specifying the width: one, two, or three columns wide. Here's the code for the last row of images above: 
+<div class="portfolio-subtitle">
+<h4>INTERVENTIONS</h4>
+</div>
+<p class="portfolio-p">
+Because of comprehensive assessment of patient, we developed specific plans to help patients live with dignity and independence and avoid 30-day hospital readmission.   
+</p>
+<p class="portfolio-p">
+I helped patients and their families navigate the maze of health care and residential options, monitor and support ongoing care, and prepare for future care needs. Here are some Interventions:  
+</p>
+<div class="portfolio-p"> 
+<ul>
+<li>Health insurance information</li>
+<li>Screening for entitlements and benefits </li>
+<li>Transportation</li>
+<li>Home-delivered meals</li>
+<li>Home care</li>
+<li>Care coordination</li>
+<li>Caregiver support</li>
+</ul>
+</div>
+<div class=".img_row_custom">
+  <img
+    class="col three"
+    src="/img/portfolio/selfhelp/foodstamp.jpg"
+    alt=""
+    title="Food stamp"
+  />
+</div>
 
-	<div class="img_row">
-	  <img class="col two" src="/img/6.jpg"/>
-	  <img class="col one" src="/img/11.jpg"/>
-	</div>
+<div class="portfolio-subtitle">
+<h4>REPORT</h4>
+</div>
+<p class="portfolio-p">
+Based on the psychosocial assessments and actionable development plans, I wrote and managed the case notes and reports to to various levels of leadership. Please check the case vignette below:   
+</p>
+<div class=".img_row_custom">
+  <img
+    class="col three"
+    src="/img/portfolio/selfhelp/casevignette.jpg"
+    alt=""
+    title="Food stamp"
+  />
+</div>
+
+<div class="portfolio-subtitle">
+<h4>OUTCOME</h4>
+</div>
+<p class="portfolio-p">
+Case management was provided in-home or by telephone within 30 days post-discharge to improve transitions between hospital and home, enhance communications between community and hospital, increase access to and use of community based Long Term Services & Supports, and reduce hospital re-admissions.
+</p>
+<p class="portfolio-p">
+We were glad to report that we reduced 30-day readmission rate by 27.6% for recently discharged Medicaid patients through psychosocial interventions. 
+</p>
