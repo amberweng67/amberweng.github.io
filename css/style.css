@@ -248,7 +248,7 @@ hr {
   right: 0;
   bottom: 0;
   background-color: #FAFAFA;
-  z-index: 999999;
+  z-index: -1;
 }
 
 .la-line-scale,
