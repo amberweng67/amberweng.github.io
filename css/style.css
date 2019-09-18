@@ -2106,3 +2106,10 @@ hr.text {
   margin-top: 48px;
 }
 
+.video-feature-content ul {
+  padding-inline-start: unset;
+}
+
+.video-feature-content li {
+  margin-left: unset;
+}
