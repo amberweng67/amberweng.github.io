@@ -22,7 +22,7 @@
     --walker-color:#5AD1FF;
     --about-color: #44DCC4;
     --cookfresh-color: #CFEB68;
-    --photos-color:#1A73E8;
+    --photos-color:#FF9C50;
     --google-color:#366FF2;
 }
 
@@ -2112,4 +2112,8 @@ hr.text {
 
 .video-feature-content li {
   margin-left: unset;
+}
+
+.video-feature-title {
+  margin-top: unset;
 }
