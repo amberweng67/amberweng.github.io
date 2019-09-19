@@ -142,50 +142,17 @@ hr {
 
 
 
-.bg-THD {
-  background: url('../assets/THD-jumbotron.jpg') no-repeat center center;
-  background-size: cover;
-}
 
 .bg-t3 {
   background: url('../assets/pics/t3/t3-jumbotron.png') no-repeat center center;
   background-size: cover;
 }
 
-.bg-walker {
-  background: url('../assets/walker-jumbotron.jpg') no-repeat center center;
+.bg-petstay {
+  background: url('../assets/pics/petstay/petstay\ 1@2x.png') no-repeat center center;
   background-size:cover;
 }
 
-.bg-up {
-  background: url('../assets/up-jumbotron.jpg') no-repeat center center;
-  background-size:cover;
-}
-
-.bg-REI {
-  background: url('../assets/REI-jumbotron.jpg') no-repeat center center;
-  background-size:cover;
-}
-
-.bg-cookfresh {
-  background: url('../assets/cookfresh-jumbotron.jpg') no-repeat center center;
-  background-size:cover;
-}
-
-.bg-thriller {
-  background: url('../assets/thriller-jumbotron-gradient.jpg') no-repeat center center;
-  background-size:cover;
-}
-
-.bg-photos {
-  background: url('../assets/photos-jumbotron.png') no-repeat center center;
-  background-size:cover;
-}
-
-.bg-google {
-  background: url('../assets/google-jumbotron.png') no-repeat center center;
-  background-size:cover;
-}
 
 .jumbotron {
   height: 100vh;
