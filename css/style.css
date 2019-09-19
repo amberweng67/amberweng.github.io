@@ -2075,6 +2075,7 @@ hr.text {
 
 .video-feature-content ul {
   padding-inline-start: unset;
+  margin-bottom: unset;
 }
 
 .video-feature-content li {
