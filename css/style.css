@@ -6,7 +6,8 @@
 
 
     --highlight-main: #9EEBCF;
-    --highlight-walker: #cbdcf5;
+    --highlight-t3: #cbdcf5;
+    --highlight-petstay: #C0E9E1;
     --highlight-up: #58CCD560;
     --highlight-REI: #FABB5460;
     --highlight-cook-fresh: #CFEB6860;
@@ -491,12 +492,20 @@ hr {
   transition: background-position 0.8s ease-out;
 }
 
-.highlight-walker {
-  background-image: linear-gradient(to right, transparent 50%, var(--highlight-walker) 50%);
+.highlight-t3 {
+  background-image: linear-gradient(to right, transparent 50%, var(--highlight-t3) 50%);
 }
 
-.highlight-walker.shown {
-  background-image: linear-gradient(to right, transparent 50%, var(--highlight-walker) 50%);
+.highlight-t3.shown {
+  background-image: linear-gradient(to right, transparent 50%, var(--highlight-t3) 50%);
+}
+
+.highlight-petstay {
+  background-image: linear-gradient(to right, transparent 50%, var(--highlight-petstay) 50%);
+}
+
+.highlight-petstay.shown {
+  background-image: linear-gradient(to right, transparent 50%, var(--highlight-petstay) 50%);
 }
 
 .highlight-up {
@@ -2059,10 +2068,16 @@ h6 {
   font-weight: bold;
 }
 
-hr.text {
+hr.hr-t3 {
   height: 8px;
   border-radius: 32px;
-  background-color: var(--highlight-walker);
+  background-color: var(--highlight-t3);
+}
+
+hr.hr-petstay {
+  height: 8px;
+  border-radius: 32px;
+  background-color: var(--highlight-petstay);
 }
 
 .bottom-margin {
