@@ -8,8 +8,8 @@
     --highlight-main: #9EEBCF;
     --highlight-t3: #cbdcf5;
     --highlight-petstay: #C0E9E1;
+    --highlight-hulu: #1AE783;
     --highlight-about: #9EEBCF60;
-
 }
 
 
@@ -1902,6 +1902,12 @@ hr.hr-petstay {
   height: 8px;
   border-radius: 32px;
   background-color: var(--highlight-petstay);
+}
+
+hr.hr-hulu {
+  height: 8px;
+  border-radius: 32px;
+  background-color: var(--highlight-hulu);
 }
 
 .bottom-margin {
