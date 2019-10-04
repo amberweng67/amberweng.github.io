@@ -10,6 +10,8 @@
     --highlight-petstay: #C0E9E1;
     --highlight-hulu: #1AE783;
     --highlight-about: #9EEBCF60;
+
+    --highlight-hulu-li: #B6FCCE;
 }
 
 
@@ -484,11 +486,11 @@ hr {
 }
 
 .highlight-hulu {
-  background-image: linear-gradient(to right, transparent 50%, var(--highlight-hulu) 50%);
+  background-image: linear-gradient(to right, transparent 50%, var(--highlight-hulu-li) 50%);
 }
 
 .highlight-hulu.shown {
-  background-image: linear-gradient(to right, transparent 50%, var(--highlight-hulu) 50%);
+  background-image: linear-gradient(to right, transparent 50%, var(--highlight-hulu-li) 50%);
 }
 
 
