@@ -483,6 +483,14 @@ hr {
   background-image: linear-gradient(to right, transparent 50%, var(--highlight-petstay) 50%);
 }
 
+.highlight-hulu {
+  background-image: linear-gradient(to right, transparent 50%, var(--highlight-hulu) 50%);
+}
+
+.highlight-hulu.shown {
+  background-image: linear-gradient(to right, transparent 50%, var(--highlight-hulu) 50%);
+}
+
 
 .highlight-link {
   position: relative;
@@ -1929,4 +1937,12 @@ hr.hr-hulu {
 
 .video-feature-title {
   margin-top: unset;
+}
+
+.hulu-video-title {
+  color: var(--highlight-hulu) !important;
+}
+
+.hulu-video-h4 {
+  margin-bottom: 48px !important;
 }
