@@ -128,6 +128,12 @@ hr {
   background-size: cover;
 }
 
+.bg-100day {
+  background: url("../assets/works/100day/100daychallenge@2x.png") no-repeat center
+  center;
+background-size: cover;
+}
+
 .jumbotron {
   height: 100vh;
   color: var(--primary-black);

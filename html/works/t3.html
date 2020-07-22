@@ -1,932 +1,748 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, user-scalable=false;" />
-    <title>T3 | Amber Weng</title>
-    <!-- Latest compiled and minified CSS -->
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-      crossorigin="anonymous"
-    />
 
-    <link
-      rel="shortcut icon"
-      type="image/x-icon"
-      href="../../assets/icon-tab.ico"
-    />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, user-scalable=false;" />
+  <title>T3 | Amber Weng</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
 
-    <!-- Optional theme -->
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
-      integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
-      crossorigin="anonymous"
-    />
+  <link rel="shortcut icon" type="image/x-icon" href="../../assets/icon-tab.ico" />
 
-    <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+    integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous" />
 
-    <!-- Latest compiled and minified JavaScript -->
-    <script
-      src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
-      integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-      crossorigin="anonymous"
-    ></script>
+  <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
 
-    <!-- Stylesheet -->
-    <link rel="stylesheet" type="text/css" href="../../css/style.css" />
-    <link rel="stylesheet" type="text/css" href="../../css/fonts.css" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link href="../../css/zoom.css" rel="stylesheet" />
-    <script src="../../js/transition.js"></script>
-    <script src="../../js/zoom.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://use.fontawesome.com/a891bb0a11.js"></script>
-    <script src="../../js/script.js" charset="utf-8"></script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
 
-    <script type="text/javascript">
-      (window.heap = window.heap || []),
-        (heap.load = function (e, t) {
-          (window.heap.appid = e), (window.heap.config = t = t || {});
-          var r = t.forceSSL || "https:" === document.location.protocol,
-            a = document.createElement("script");
-          (a.type = "text/javascript"),
-            (a.async = !0),
-            (a.src =
-              (r ? "https:" : "http:") +
-              "//cdn.heapanalytics.com/js/heap-" +
-              e +
-              ".js");
-          var n = document.getElementsByTagName("script")[0];
-          n.parentNode.insertBefore(a, n);
-          for (
-            var o = function (e) {
-                return function () {
-                  heap.push(
-                    [e].concat(Array.prototype.slice.call(arguments, 0))
-                  );
-                };
-              },
-              p = [
-                "addEventProperties",
-                "addUserProperties",
-                "clearEventProperties",
-                "identify",
-                "removeEventProperty",
-                "setEventProperties",
-                "track",
-                "unsetEventProperty",
-              ],
-              c = 0;
-            c < p.length;
-            c++
-          )
-            heap[p[c]] = o(p[c]);
-        });
-      heap.load("1409449789");
-    </script>
-  </head>
+  <!-- Stylesheet -->
+  <link rel="stylesheet" type="text/css" href="../../css/style.css" />
+  <link rel="stylesheet" type="text/css" href="../../css/fonts.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link href="../../css/zoom.css" rel="stylesheet" />
+  <script src="../../js/transition.js"></script>
+  <script src="../../js/zoom.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://use.fontawesome.com/a891bb0a11.js"></script>
+  <script src="../../js/script.js" charset="utf-8"></script>
 
-  <body>
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-      <div class="navbar-header">
-        <button
-          type="button"
-          class="navbar-toggle"
-          data-toggle="collapse"
-          data-target="#collapsible-nav"
-        >
-          <span class="sr-only"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="../home.html">Amber Weng</a>
-      </div>
-      <div class="collapse navbar-collapse navbar-right" id="collapsible-nav">
-        <ul class="nav navbar-nav">
-          <li>
-            <a
-              class="selected hvr-underline-from-left"
-              href="../home.html#my-work"
-              >Work</a
-            >
-          </li>
-          <li>
-            <a class="hvr-underline-from-left" href="../about-me.html"
-              >About Me</a
-            >
-          </li>
-          <li>
-            <a
-              class="hvr-underline-from-left"
-              href="../../assets/resume/Amber Weng UX Design Resume 2.0.pdf"
-              target="_blank"
-              >Resume</a
-            >
-          </li>
-        </ul>
-      </div>
-    </nav>
+  <script type="text/javascript">
+    (window.heap = window.heap || []),
+      (heap.load = function (e, t) {
+        (window.heap.appid = e), (window.heap.config = t = t || {});
+        var r = t.forceSSL || "https:" === document.location.protocol,
+          a = document.createElement("script");
+        (a.type = "text/javascript"),
+          (a.async = !0),
+          (a.src =
+            (r ? "https:" : "http:") +
+            "//cdn.heapanalytics.com/js/heap-" +
+            e +
+            ".js");
+        var n = document.getElementsByTagName("script")[0];
+        n.parentNode.insertBefore(a, n);
+        for (
+          var o = function (e) {
+            return function () {
+              heap.push(
+                [e].concat(Array.prototype.slice.call(arguments, 0))
+              );
+            };
+          },
+          p = [
+            "addEventProperties",
+            "addUserProperties",
+            "clearEventProperties",
+            "identify",
+            "removeEventProperty",
+            "setEventProperties",
+            "track",
+            "unsetEventProperty",
+          ],
+          c = 0;
+          c < p.length;
+          c++
+        )
+          heap[p[c]] = o(p[c]);
+      });
+    heap.load("1409449789");
+  </script>
+</head>
 
-    <div class="container-fluid">
-      <div class="row" style="margin-top: 50px;">
-        <nav class="col-lg-3 col-md-3 hidden-sm hidden-xs">
-          <div class="bs-docs-sidebar">
-            <ul class="nav nav-stacked" id="sidebar">
-              <li>
-                <a href="#overview">Overview</a>
-                <ul class="nav nav-stacked">
-                  <li><a href="#background">Background</a></li>
-                  <li><a href="#context">Context</a></li>
-                  <li><a href="#problem">Problem & Principles</a></li>
-                </ul>
-              </li>
-              <li>
-                <a href="#research">Research</a>
-                <ul class="nav nav-stacked">
-                  <li><a href="#whatdidtheysay">What did they say</a></li>
-                </ul>
-              </li>
-              <li>
-                <a href="#design">Design</a>
-                <ul class="nav nav-stacked">
-                  <li><a href="#startCrafting">Start Crafting</a></li>
-                  <li><a href="#designAlternatives">Design alternatives</a></li>
-                  <li><a href="#finalDesign">Final Design</a></li>
-                </ul>
-              </li>
-              <li>
-                <a href="#retrospective">Retrospective</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </div>
+<body>
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapsible-nav">
+        <span class="sr-only"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="../home.html">Amber Weng</a>
     </div>
-
-    <div class="bg bg-t3" data-aos="fade-up" data-aos-duration="600"></div>
-    <div class="jumbotron" data-aos="fade-up" data-aos-duration="600">
-      <div class="jumbotron-text"></div>
+    <div class="collapse navbar-collapse navbar-right" id="collapsible-nav">
+      <ul class="nav navbar-nav">
+        <li>
+          <a class="selected hvr-underline-from-left" href="../home.html#my-work">Work</a>
+        </li>
+        <li>
+          <a class="hvr-underline-from-left" href="../about-me.html">About Me</a>
+        </li>
+        <li>
+          <a class="hvr-underline-from-left" href="../../assets/resume/Amber Weng UX Design Resume 2.0.pdf"
+            target="_blank">Resume</a>
+        </li>
+      </ul>
     </div>
+  </nav>
 
-    <div
-      class="col-lg-7 col-md-7 col-sm-10 col-xs-12 col-centered main-content first-section"
-    >
-      <section
-        id="overview"
-        class="group"
-        data-aos="fade-up"
-        data-aos-duration="600"
-      >
-        <h6></h6>
-        <br />
-        <h3>Overview</h3>
-        <hr class="hr-t3" />
-        <div class="row">
-          <div class="subgroup-left-side col-lg-8 col-md-8 col-sm-12 col-xs-12">
-            <h4 id="background">Background</h4>
-            <p>
-              T3 Go offers a range of
-              <span class="highlight highlight-t3"
-                >on-demand mobility options</span
-              >, including private car hailing and Enterprise Solutions. The app
-              launched on July 2019, and has served for almost one million users
-              around China so far.
-            </p>
-            <img
-              class="img-responsive full-img bottom-margin"
-              src="../../assets/works/t3/core 2xx replace.png"
-              alt=""
-            />
-          </div>
-          <div
-            class="subgroup-right-side col-lg-4 col-md-4 col-sm-12 col-xs-12"
-          >
-            <h4>PROJECT INFO</h4>
-            <p>Client: T3 Go</p>
-            <h4>METHODS</h4>
-            <p>
-              User Interview, Affinity Diagram, Journey Map, Wireframe,
-              Prototype, User Test, Iteration
-            </p>
-            <h4>TEAM</h4>
-            <p>Amber, Iris, Jingru, Xiaoyuan, Wenjie, Zoe</p>
-            <h4></h4>
-            <h4>TIMELINE</h4>
-            <p>July 2019 - August 2019</p>
-          </div>
+  <div class="container-fluid">
+    <div class="row" style="margin-top: 50px;">
+      <nav class="col-lg-3 col-md-3 hidden-sm hidden-xs">
+        <div class="bs-docs-sidebar">
+          <ul class="nav nav-stacked" id="sidebar">
+            <li>
+              <a href="#overview">Overview</a>
+              <ul class="nav nav-stacked">
+                <li><a href="#background">Background</a></li>
+                <li><a href="#context">Context</a></li>
+                <li><a href="#problem">Problem & Principles</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#research">Research</a>
+              <ul class="nav nav-stacked">
+                <li><a href="#whatdidtheysay">What did they say</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#design">Design</a>
+              <ul class="nav nav-stacked">
+                <li><a href="#startCrafting">Start Crafting</a></li>
+                <li><a href="#designAlternatives">Design alternatives</a></li>
+                <li><a href="#finalDesign">Final Design</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#retrospective">Retrospective</a>
+            </li>
+          </ul>
         </div>
-      </section>
-
-      <div class="subgroup-left-side col-lg-8 col-md-8 col-sm-12 col-xs-12">
-        <p>
-          Fortunately, I had a chance to participate in this consultant project
-          as a UX designer. Mentored by a senior UX designer, I produced some
-          deliverables and presented these to stakeholders. They helped me to
-          grow fast as a professional designer and learned a lot about how to
-          collaborate as a team.
-        </p>
-      </div>
-      <div class="subgroup text-content">
-        <h4 id="context">Context</h4>
-        <p>
-          The idea of getting into a stranger's unmarked car was unheard of even
-          a decade ago. Today, ride-sharing platforms are tremendously popular:
-          Uber, for example, provides millions of rides worldwide each day.
-          However that transition happened without a lot of oversight or
-          regulation.
-        </p>
-        <p>
-          In China, the ride-sharing industry faced strong criticism, since
-          2018, 2 riders reportedly raped and murdered at the hands of their
-          drivers in less than 100 days. These two murders and some sexually
-          assault cases hit ride-sharing business and reputation.
-          <span class="highlight highlight-t3"
-            >Passengers are worried that the ride-sharing companies ignore
-            riders safety problem to pursue scale and rapid growth.</span
-          >
-        </p>
-      </div>
-      <div class="subgroup text-content">
-        <h4 id="problem">Problem & Principles</h4>
-        <p>
-          <span class="highlight highlight-t3"
-            >Safety problem is every ride-share company's problem. </span
-          >Today, some safety features have been introduced which include ID
-          test for drivers and safety center for users. But these are far from
-          enough to
-          <span class="highlight highlight-t3"
-            >gain riders trust and ensure the safety of passengers</span
-          >.
-        </p>
-        <p>
-          In order to better understand and reduce this problem, we conducted
-          this project. The T3 Go experience was built with safety in mind.
-          <span class="highlight highlight-t3"
-            >Through designing incident prevention tools, customized rating
-            system, clear drivers information, and elevated security
-            hardware-app connection, we’re dedicated to helping riders move
-            safely</span
-          >
-          and focus on what matters most.
-        </p>
-        <p class="work-text">
-          Then we decided three keywords to guide our design work:
-        </p>
-      </div>
-      <img
-        class="img-responsive full-img bottom-margin"
-        src="../../assets/works/t3/3 keywords.png"
-        alt=""
-      />
+      </nav>
     </div>
+  </div>
 
-    <img
-      class="img-responsive full-img"
-      src="../../assets/works/t3/divider2x.png"
-      alt=""
-    />
+  <div class="bg bg-t3" data-aos="fade-up" data-aos-duration="600"></div>
+  <div class="jumbotron" data-aos="fade-up" data-aos-duration="600">
+    <div class="jumbotron-text"></div>
+  </div>
 
-    <div
-      class="col-lg-7 col-md-7 col-sm-10 col-xs-12 col-centered main-content"
-    >
-      <section
-        id="research"
-        class="group"
-        data-aos="fade-up"
-        data-aos-duration="600"
-      >
-        <h6></h6>
-        <br />
-        <h3>Research</h3>
-        <hr class="hr-t3" />
-        <div class="row">
-          <div class="subgroup">
-            <h4 id="whatdidtheysay">What did they say?</h4>
-            <p>
-              Though we got some data and metrics from desk research, we decided
-              to make 15
-              <span class="highlight highlight-t3">interviews</span>
-              with riders and drivers. We wanted to explore who were our users,
-              how they were using ride-sharing app, and what did they concern
-              about safety and trust problems during their whole riding
-              experiences. I talked with passengers and asked questions like
-              "What's your favorite part of ride-sharing app?” “<span
-                class="highlight highlight-t3"
-                >What does safety and trust mean to you?</span
-              >”
-            </p>
-            <p>
-              The team conducted an
-              <span class="highlight highlight-t3">affinity diagramming</span>
-              session after the interview. We worked together to group all of
-              the sticky notes created into associative groups, to identify key
-              patterns, in terms of problems found, user attitudes as well as
-              behaviors.
-            </p>
-            <img
-              class="img-responsive full-img bottom-margin"
-              src="../../assets/works/t3/Affinity diagram@2x.png"
-              alt=""
-            />
-            <p>
-              The patterns presented in the affinity diagram allowed us to
-              identify the dominant problems and concerns. In other words, what
-              do they care about when we are talking about safety and trust.
-            </p>
-            <img
-              class="img-responsive full-img bottom-margin"
-              src="../../assets/works/t3/key findings.png"
-              alt=""
-            />
-            <p>
-              After summarizing research results and identifying multiple
-              behavioral variables, I create the primary personas to guide my
-              design process.
-            </p>
-            <img
-              class="img-responsive full-img bottom-margin"
-              src="../../assets/works/t3/Slide1.png"
-              alt=""
-            />
-            <img
-              class="img-responsive full-img bottom-margin"
-              src="../../assets/works/t3/Slide2.png"
-              alt=""
-            />
-          </div>
-        </div>
-        <div class="subgroup">
-          <h4 id="visualizing">Visualizing the End-to-End</h4>
+  <div class="col-lg-7 col-md-7 col-sm-10 col-xs-12 col-centered main-content first-section">
+    <section id="overview" class="group" data-aos="fade-up" data-aos-duration="600">
+      <h6></h6>
+      <br />
+      <h3>Overview</h3>
+      <hr class="hr-t3" />
+      <div class="row">
+        <div class="subgroup-left-side col-lg-8 col-md-8 col-sm-12 col-xs-12">
+          <h4 id="background">Background</h4>
           <p>
-            Then I was wondering
-            <span class="highlight highlight-t3"
-              >"What design opportunities do we have?"</span
-            >
-            “How can we help passenger ride with trust and safety?” I developed
-            a
-            <span class="highlight highlight-t3">user journey</span>
-            with typical use cases and listed all the key information in each
-            step to help me gain a better understanding.
+            T3 Go offers a range of
+            <span class="highlight highlight-t3">on-demand mobility options</span>, including private car hailing and
+            Enterprise Solutions. The app
+            launched on July 2019, and has served for almost one million users
+            around China so far.
           </p>
-          <img
-            class="img-responsive full-img bottom-margin"
-            src="../../assets/works/t3/Journey Map Style4.jpg"
-            alt=""
-          />
+          <img class="img-responsive full-img bottom-margin" src="../../assets/works/t3/core 2xx replace.png" alt="" />
         </div>
-      </section>
-    </div>
-
-    <img
-      class="img-responsive full-img"
-      src="../../assets/works/t3/divider design 2@2x.png"
-      alt=""
-    />
-
-    <div
-      class="col-lg-7 col-md-7 col-sm-10 col-xs-12 col-centered main-content"
-    >
-      <section
-        id="design"
-        class="group"
-        data-aos="fade-up"
-        data-aos-duration="600"
-      >
-        <h6></h6>
-        <br />
-        <h3>Design</h3>
-        <hr class="hr-t3" />
-        <div class="row">
-          <div class="subgroup">
-            <h4 id="startCrafting">Start Crafting</h4>
-            <p>
-              Moving into the design phase of the project, each team member went
-              away to individually conceptualize and sketch some ideas for
-              solutions to the problems raised throughout the research phase. As
-              a team, we then discussed each other’s proposals, identifying the
-              promising qualities that could be taken forward from each design.
-              After collaborating to sketch out a solution based on the
-              qualities identified, we then created a
-              <span class="highlight highlight-t3">wireframe</span>.
-            </p>
-            <img
-              class="img-responsive full-img bottom-margin"
-              src="../../assets/works/t3/Lo-fi white.png"
-              alt=""
-            />
-          </div>
-          <div class="subgroup">
-            <h4 id="designAlternatives">Design alternatives</h4>
-            <p>
-              Through the design process, I had lots of opportunities to get
-              feedback not only from the design team but also from the PMs.
-              <span class="highlight highlight-t3">Iteration</span>
-              after iteration was made to distill our MVP down to a very
-              lightweight, bare-minimum version.
-            </p>
-            <p>
-              I categorized all types of information into 3 sections to ensure
-              the highthighest safety and security standards:
-              <span class="highlight highlight-t3"
-                >before the ride, during the ride, and after the ride.</span
-              >
-              Here are some representative screens from each section that have
-              either been discarded or planned for a later release.
-            </p>
-            <img
-              class="img-responsive full-img bottom-margin"
-              src="../../assets/works/t3/Iteration1.png"
-              alt=""
-            />
-            <p>
-              In this one, I highlighted
-              <span class="highlight highlight-t3"
-                >plate number, vehicle model and color as</span
-              >
-              they were the most vital content that passengers would use for
-              recognizing the car and driver. Also, by putting the most
-              frequently used 3 features on the bottom,
-              <span class="highlight highlight-t3"
-                >contact driver, cancel ride, and share trip,</span
-              >
-              I make the info card clearer and shorter.
-            </p>
-            <p>
-              Meanwhile, Card-based design can gather various pieces of
-              information to form one coherent piece of content and it’s
-              intuitive for users to understand.
-            </p>
-            <img
-              class="img-responsive full-img bottom-margin"
-              src="../../assets/works/t3/Iteration 2.png"
-              alt=""
-            />
-            <p>
-              Come back to the goal that we wanted to gain riders trust and
-              ensure the safety of passengers, the way we were showing the ride
-              card was inefficient. By structuring the sections in a vertical
-              stack, the most wanted information (<span
-                class="highlight highlight-t3"
-                >arrival time and destination</span
-              >) was placed on the top of the ride card. To help riders easily
-              control their trips, these 3 features -
-              <span class="highlight highlight-t3"
-                >call police, share trip and change destination</span
-              >
-              were moved to the top as well.
-            </p>
-            <img
-              class="img-responsive full-img bottom-margin"
-              src="../../assets/works/t3/Iteration 3.png"
-              alt=""
-            />
-            <p>
-              The previous design divided rating to 3 sections - driver, app,
-              and vehicle. Users felt this required too much effort. Instead, we
-              utilized
-              <span class="highlight highlight-t3"
-                >general rating and existing tags</span
-              >
-              (compliments or complaints) as a default mechanism to help users
-              provide their feedback. With only 3-4 clicks, we maximized output.
-            </p>
-            <p>
-              We understand that sometimes the drivers make riders feel unsafe
-              or annoyed, so we provide an opportunity for riders to
-              <span class="highlight highlight-t3">blacklist</span>
-              these drivers. Next time, the system will avoid assigning this
-              driver to you
-            </p>
-          </div>
-          <div class="subgroup">
-            <h4 id="finalDesign" class="bottom-margin">Final Design</h4>
-            <img
-              class="img-responsive full-img bottom-margin top-margin"
-              src="../../assets/works/t3/before the ride divider@2x.png"
-              alt=""
-            />
-          </div>
-          <div class="subgroup">
-            <div class="row feature-row">
-              <div class="col-xs-12 col-sm-6 col-md-5 col-lg-5">
-                <video autoplay muted loop class="video-features">
-                  <source src="../../assets/works/t3/onboarding1.mov" />
-                </video>
-              </div>
-
-              <div class="col-xs-12 col-sm-6 col-md-7 col-lg-7">
-                <h5 class="video-feature-title video-feature-title-photos">
-                  On Boarding
-                </h5>
-
-                <div class="video-feature-content">
-                  <ul>
-                    <li>
-                      Help riders understand T3 Go competitive advantages at the
-                      beginning phase.
-                    </li>
-                    <li>
-                      Comprehensive driver screening and evaluation, including
-                      real-time identification. Drivers are periodically asked
-                      to take a selfie, which T3 Go matches against their
-                      on-file identification to make sure the driver is still
-                      eligible to drive.
-                    </li>
-                    <li>
-                      Elevated In-vehicle safety devices (3 SOS Buttons and 1
-                      camera).
-                    </li>
-                    <li>
-                      High quality service.
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            <div class="row feature-row">
-              <div class="col-xs-12 col-sm-6 col-md-7 col-lg-7">
-                <h5 class="video-feature-title video-feature-title-photos">
-                  Quiet Mode
-                </h5>
-                <div class="video-feature-content">
-                  <ul>
-                    <li>
-                      Quiet mode was built for riders who are constantly on the
-                      go and want a little extra comfort, safety and trust.
-                      We’ve all been there: you need a little quiet time but the
-                      driver keeps talking with you, or prefer driver to stay
-                      focused while driving but the driver is facetiming.
-                    </li>
-                    <li>
-                      That’s why this new mode enhances your ride experience,
-                      <span class="highlight highlight-t3"
-                        >prevent distracted driving in advance:</span
-                      >
-                      You can let your drivers know when you’re looking for a
-                      quiet ride so you can stay comfortable on the road.
-                    </li>
-                  </ul>
-                </div>
-              </div>
-
-              <div class="col-xs-12 col-sm-6 col-md-5 col-lg-5">
-                <video autoplay muted loop class="video-features">
-                  <source src="../../assets/works/t3/quite mode.mov" />
-                </video>
-              </div>
-            </div>
-            <div class="row feature-row">
-              <div class="col-xs-12 col-sm-6 col-md-5 col-lg-5">
-                <video autoplay muted loop class="video-features">
-                  <source src="../../assets/works/t3/emergency contact.mov" />
-                </video>
-              </div>
-
-              <div class="col-xs-12 col-sm-6 col-md-7 col-lg-7">
-                <h5 class="video-feature-title video-feature-title-photos">
-                  Emergency Contact
-                </h5>
-
-                <div class="video-feature-content">
-                  <ul>
-                    <li>
-                      When the rider is waiting for the driver, the emergency
-                      contact card will pop-up.
-                      <span class="highlight highlight-t3"
-                        >Set up your trusted contacts and create reminders to
-                        share your trip status with friends and family in real
-                        time.</span
-                      >
-                    </li>
-                    <li>
-                      You can also setup next time, the system will highlight
-                      safety center to remind riders to complete it.
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            <div class="row feature-row">
-              <div class="col-xs-12 col-sm-6 col-md-7 col-lg-7">
-                <h5 class="video-feature-title video-feature-title-photos">
-                  Info Card
-                </h5>
-                <div class="video-feature-content">
-                  <ul>
-                    <li>
-                      The app will surface your
-                      <span class="highlight highlight-t3"
-                        >live location, vehicle information and driver
-                        information</span
-                      >
-                      which you can quickly share with your family and friends.
-                      Before you hop in, take a second to double-check the app
-                      for your driver’s information to make sure you get into
-                      the right car.
-                    </li>
-                    <li>
-                      If you have trouble finding the right car, you can either
-                      call driver or text him. Of course, your
-                      <span class="highlight highlight-t3"
-                        >phone number is private</span
-                      >, drivers will not see your phone number when you call
-                      through the app.
-                    </li>
-                    <li>
-                      <span class="highlight highlight-t3"
-                        >In-vehicle safety devices</span
-                      >
-                      are presented on this card which would help you to know
-                      how to use these devices if something unexpected happens.
-                    </li>
-                    <li>
-                      Driver info card will lead you to the driver profile to
-                      view detailed driver experience, driving record and
-                      compliments. Frequent comments are
-                      <span class="highlight highlight-t3"
-                        >demonstrated as bullet comments.</span
-                      >
-                    </li>
-                    <li>
-                      Vehicle page introduces car mode, mileage and
-                      <span class="highlight highlight-t3"
-                        >accident record</span
-                      >
-                      with exterior and interior photos.
-                    </li>
-                    <li>
-                      The rest of info card could display banner ads, event
-                      promotions or new features.
-                    </li>
-                  </ul>
-                </div>
-              </div>
-
-              <div class="col-xs-12 col-sm-6 col-md-5 col-lg-5">
-                <video autoplay muted loop class="video-features">
-                  <source src="../../assets/works/t3/info card.mov" />
-                </video>
-              </div>
-            </div>
-            <img
-              class="img-responsive full-img bottom-margin"
-              src="../../assets/works/t3/during the ride divider@2x.png"
-              alt=""
-            />
-            <div class="row feature-row">
-              <div class="col-xs-12 col-sm-6 col-md-5 col-lg-5">
-                <video autoplay muted loop class="video-features">
-                  <source src="../../assets/works/t3/ride card.mov" />
-                </video>
-              </div>
-              <div class="col-xs-12 col-sm-6 col-md-7 col-lg-7">
-                <h5 class="video-feature-title video-feature-title-photos">
-                  Ride Card
-                </h5>
-                <div class="video-feature-content">
-                  <ul>
-                    <li>
-                      Our guidelines were developed to help make every
-                      experience
-                      <span class="highlight highlight-t3"
-                        >feel safe, respectful, and positive.</span
-                      >
-                      On every trip, you can
-                      <span class="highlight highlight-t3"
-                        >tap safety center</span
-                      >
-                      and get help whenever you need it.
-                    </li>
-                    <li>
-                      Next to safety center is status card which tells you
-                      <span class="highlight highlight-t3"
-                        >in-vehicle safety devices are working normally.</span
-                      >
-                    </li>
-                    <li>
-                      From 11 PM to 5 AM, the app displays a floating banner to
-                      remind that you are<span class="highlight highlight-t3"
-                        >riding at late night, please keep alert.</span
-                      >
-                    </li>
-                    <li>
-                      Arrival time and destination are placed on the top of the
-                      ride card.
-                    </li>
-                    <li>
-                      You can use the
-                      <span class="highlight highlight-t3"
-                        >in-app emergency button</span
-                      >
-                      to call the police to get help if you need it. The app
-                      displays your location and trip details, so you can
-                      quickly
-                      <span class="highlight highlight-t3">share</span>
-                      them with the police dispatcher or your family and
-                      friends.
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            <div class="row feature-row">
-              <div class="col-xs-12 col-sm-6 col-md-7 col-lg-7">
-                <h5 class="video-feature-title video-feature-title-photos">
-                  Alert
-                </h5>
-                <div class="video-feature-content">
-                  <ul>
-                    <li>
-                      By using sensors and GPS data, T3 Go can help detect if a
-                      trip goes to an
-                      <span class="highlight highlight-t3"
-                        >unusually route</span
-                      >
-                      or the car
-                      <span class="highlight highlight-t3"
-                        >stays in one place</span
-                      >
-                      for a very long time. If we notice anything out of the
-                      ordinary, we’ll send an
-                      <span class="highlight highlight-t3">urgent alert</span>
-                      to you and you can also provide feedback to us if the
-                      alert is not accurate.
-                    </li>
-                    <li>
-                      You can check details about this alert or active
-                      protection system. When you tap “active”, we will
-                      <span class="highlight highlight-t3"
-                        >contact the police and your emergency contact</span
-                      >.
-                    </li>
-                    <li>
-                      From 11 PM to 5 AM, the app displays a floating banner to
-                      remind that you are riding at late night, please keep
-                      alert.
-                    </li>
-                    <li>
-                      Arrival time and destination are placed on the top of the
-                      ride card.
-                    </li>
-                    <li>
-                      You can use the in-app emergency button to call the police
-                      to get help if you need it. The app displays your location
-                      and trip details, so you can quickly share them with the
-                      police dispatcher or your family and friends.
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-xs-12 col-sm-6 col-md-5 col-lg-5">
-                <video autoplay muted loop class="video-features">
-                  <source src="../../assets/works/t3/alert.mov" />
-                </video>
-              </div>
-            </div>
-            <img
-              class="img-responsive full-img bottom-margin"
-              src="../../assets/works/t3/after the ride divider@2x.png"
-              alt=""
-            />
-            <div class="row feature-row">
-              <div class="col-xs-12 col-sm-6 col-md-5 col-lg-5">
-                <video autoplay muted loop class="video-features">
-                  <source src="../../assets/works/t3/rating.mov" />
-                </video>
-              </div>
-              <div class="col-xs-12 col-sm-6 col-md-7 col-lg-7">
-                <h5 class="video-feature-title video-feature-title-photos">
-                  Rating
-                </h5>
-                <div class="video-feature-content">
-                  <ul>
-                    <li>
-                      Upon the completion of a ride, we use witty remarks to
-                      encourage users to provide ratings and comments.
-                    </li>
-                    <li>
-                      If positive, you proceed to recognize and
-                      <span class="highlight highlight-t3"
-                        >select the positive labels of the ride.</span
-                      >
-                      The process of leaving a negative rating for a ride works
-                      much in the same way as when leaving a positive rating.
-                      You are also able to add your
-                      <span class="highlight highlight-t3">own critique</span>,
-                      if not available in the predefined list.
-                    </li>
-                    <li>
-                      You now have the option to
-                      <span class="highlight highlight-t3"
-                        >‘block’ a driver</span
-                      >, and you will not match with that driver again.
-                    </li>
-                    <li>
-                      Every piece of feedback is valuable to both the driver for
-                      performance improvement, and to T3 Go as a company. The
-                      selections in both positive and negative help to build up
-                      the profile of the driver, influencing the match system.
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
-
-    <img
-      class="img-responsive full-img bottom-margin top-margin"
-      src="../../assets/works/t3/divider what I learn@2x.png"
-      alt=""
-    />
-
-    <div
-      class="col-lg-7 col-md-7 col-sm-10 col-xs-12 col-centered main-content"
-    >
-      <section
-        id="retrospective"
-        class="group"
-        data-aos="fade-up"
-        data-aos-duration="600"
-      >
-        <h6></h6>
-        <br />
-        <h3>Retrospective</h3>
-        <hr class="hr-t3" />
-        <div class="subgroup">
-          <h4 id="balance">Balance business needs and user needs</h4>
+        <div class="subgroup-right-side col-lg-4 col-md-4 col-sm-12 col-xs-12">
+          <h4>PROJECT INFO</h4>
+          <p>Client: T3 Go</p>
+          <h4>METHODS</h4>
           <p>
-            From this project, I learned about the importance of gathering
-            requirements from the development team and stakeholders. But
-            sometimes what stakeholders want doesn’t mean anybody else will. We
-            need to ground stakeholders and team in reality with empirical
-            evidence. We must turn assumptions into facts.
+            User Interview, Affinity Diagram, Journey Map, Wireframe,
+            Prototype, User Test, Iteration
+          </p>
+          <h4>TEAM</h4>
+          <p>Amber, Iris, Jingru, Xiaoyuan, Wenjie, Zoe</p>
+          <h4></h4>
+          <h4>TIMELINE</h4>
+          <p>July 2019 - August 2019</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="subgroup-left-side col-lg-8 col-md-8 col-sm-12 col-xs-12">
+      <p>
+        Fortunately, I had a chance to participate in this consultant project
+        as a UX designer. Mentored by a senior UX designer, I produced some
+        deliverables and presented these to stakeholders. They helped me to
+        grow fast as a professional designer and learned a lot about how to
+        collaborate as a team.
+      </p>
+    </div>
+    <div class="subgroup text-content">
+      <h4 id="context">Context</h4>
+      <p>
+        The idea of getting into a stranger's unmarked car was unheard of even
+        a decade ago. Today, ride-sharing platforms are tremendously popular:
+        Uber, for example, provides millions of rides worldwide each day.
+        However that transition happened without a lot of oversight or
+        regulation.
+      </p>
+      <p>
+        In China, the ride-sharing industry faced strong criticism, since
+        2018, 2 riders reportedly raped and murdered at the hands of their
+        drivers in less than 100 days. These two murders and some sexually
+        assault cases hit ride-sharing business and reputation.
+        <span class="highlight highlight-t3">Passengers are worried that the ride-sharing companies ignore
+          riders safety problem to pursue scale and rapid growth.</span>
+      </p>
+    </div>
+    <div class="subgroup text-content">
+      <h4 id="problem">Problem & Principles</h4>
+      <p>
+        <span class="highlight highlight-t3">Safety problem is every ride-share company's problem. </span>Today, some
+        safety features have been introduced which include ID
+        test for drivers and safety center for users. But these are far from
+        enough to
+        <span class="highlight highlight-t3">gain riders trust and ensure the safety of passengers</span>.
+      </p>
+      <p>
+        In order to better understand and reduce this problem, we conducted
+        this project. The T3 Go experience was built with safety in mind.
+        <span class="highlight highlight-t3">Through designing incident prevention tools, customized rating
+          system, clear drivers information, and elevated security
+          hardware-app connection, we’re dedicated to helping riders move
+          safely</span>
+        and focus on what matters most.
+      </p>
+      <p class="work-text">
+        Then we decided three keywords to guide our design work:
+      </p>
+    </div>
+    <img class="img-responsive full-img bottom-margin" src="../../assets/works/t3/3 keywords.png" alt="" />
+  </div>
+
+  <img class="img-responsive full-img" src="../../assets/works/t3/divider2x.png" alt="" />
+
+  <div class="col-lg-7 col-md-7 col-sm-10 col-xs-12 col-centered main-content">
+    <section id="research" class="group" data-aos="fade-up" data-aos-duration="600">
+      <h6></h6>
+      <br />
+      <h3>Research</h3>
+      <hr class="hr-t3" />
+      <div class="row">
+        <div class="subgroup">
+          <h4 id="whatdidtheysay">What did they say?</h4>
+          <p>
+            Though we got some data and metrics from desk research, we decided
+            to make 15
+            <span class="highlight highlight-t3">interviews</span>
+            with riders and drivers. We wanted to explore who were our users,
+            how they were using ride-sharing app, and what did they concern
+            about safety and trust problems during their whole riding
+            experiences. I talked with passengers and asked questions like
+            "What's your favorite part of ride-sharing app?” “<span class="highlight highlight-t3">What does safety and
+              trust mean to you?</span>”
+          </p>
+          <p>
+            The team conducted an
+            <span class="highlight highlight-t3">affinity diagramming</span>
+            session after the interview. We worked together to group all of
+            the sticky notes created into associative groups, to identify key
+            patterns, in terms of problems found, user attitudes as well as
+            behaviors.
+          </p>
+          <img class="img-responsive full-img bottom-margin" src="../../assets/works/t3/Affinity diagram@2x.png"
+            alt="" />
+          <p>
+            The patterns presented in the affinity diagram allowed us to
+            identify the dominant problems and concerns. In other words, what
+            do they care about when we are talking about safety and trust.
+          </p>
+          <img class="img-responsive full-img bottom-margin" src="../../assets/works/t3/key findings.png" alt="" />
+          <p>
+            After summarizing research results and identifying multiple
+            behavioral variables, I create the primary personas to guide my
+            design process.
+          </p>
+          <img class="img-responsive full-img bottom-margin" src="../../assets/works/t3/Slide1.png" alt="" />
+          <img class="img-responsive full-img bottom-margin" src="../../assets/works/t3/Slide2.png" alt="" />
+        </div>
+      </div>
+      <div class="subgroup">
+        <h4 id="visualizing">Visualizing the End-to-End</h4>
+        <p>
+          Then I was wondering
+          <span class="highlight highlight-t3">"What design opportunities do we have?"</span>
+          “How can we help passenger ride with trust and safety?” I developed
+          a
+          <span class="highlight highlight-t3">user journey</span>
+          with typical use cases and listed all the key information in each
+          step to help me gain a better understanding.
+        </p>
+        <img class="img-responsive full-img bottom-margin" src="../../assets/works/t3/Journey Map Style4.jpg" alt="" />
+      </div>
+    </section>
+  </div>
+
+  <img class="img-responsive full-img" src="../../assets/works/t3/divider design 2@2x.png" alt="" />
+
+  <div class="col-lg-7 col-md-7 col-sm-10 col-xs-12 col-centered main-content">
+    <section id="design" class="group" data-aos="fade-up" data-aos-duration="600">
+      <h6></h6>
+      <br />
+      <h3>Design</h3>
+      <hr class="hr-t3" />
+      <div class="row">
+        <div class="subgroup">
+          <h4 id="startCrafting">Start Crafting</h4>
+          <p>
+            Moving into the design phase of the project, each team member went
+            away to individually conceptualize and sketch some ideas for
+            solutions to the problems raised throughout the research phase. As
+            a team, we then discussed each other’s proposals, identifying the
+            promising qualities that could be taken forward from each design.
+            After collaborating to sketch out a solution based on the
+            qualities identified, we then created a
+            <span class="highlight highlight-t3">wireframe</span>.
+          </p>
+          <img class="img-responsive full-img bottom-margin" src="../../assets/works/t3/Lo-fi white.png" alt="" />
+        </div>
+        <div class="subgroup">
+          <h4 id="designAlternatives">Design alternatives</h4>
+          <p>
+            Through the design process, I had lots of opportunities to get
+            feedback not only from the design team but also from the PMs.
+            <span class="highlight highlight-t3">Iteration</span>
+            after iteration was made to distill our MVP down to a very
+            lightweight, bare-minimum version.
+          </p>
+          <p>
+            I categorized all types of information into 3 sections to ensure
+            the highthighest safety and security standards:
+            <span class="highlight highlight-t3">before the ride, during the ride, and after the ride.</span>
+            Here are some representative screens from each section that have
+            either been discarded or planned for a later release.
+          </p>
+          <img class="img-responsive full-img bottom-margin" src="../../assets/works/t3/Iteration1.png" alt="" />
+          <p>
+            In this one, I highlighted
+            <span class="highlight highlight-t3">plate number, vehicle model and color as</span>
+            they were the most vital content that passengers would use for
+            recognizing the car and driver. Also, by putting the most
+            frequently used 3 features on the bottom,
+            <span class="highlight highlight-t3">contact driver, cancel ride, and share trip,</span>
+            I make the info card clearer and shorter.
+          </p>
+          <p>
+            Meanwhile, Card-based design can gather various pieces of
+            information to form one coherent piece of content and it’s
+            intuitive for users to understand.
+          </p>
+          <img class="img-responsive full-img bottom-margin" src="../../assets/works/t3/Iteration 2.png" alt="" />
+          <p>
+            Come back to the goal that we wanted to gain riders trust and
+            ensure the safety of passengers, the way we were showing the ride
+            card was inefficient. By structuring the sections in a vertical
+            stack, the most wanted information (<span class="highlight highlight-t3">arrival time and
+              destination</span>) was placed on the top of the ride card. To help riders easily
+            control their trips, these 3 features -
+            <span class="highlight highlight-t3">call police, share trip and change destination</span>
+            were moved to the top as well.
+          </p>
+          <img class="img-responsive full-img bottom-margin" src="../../assets/works/t3/Iteration 3.png" alt="" />
+          <p>
+            The previous design divided rating to 3 sections - driver, app,
+            and vehicle. Users felt this required too much effort. Instead, we
+            utilized
+            <span class="highlight highlight-t3">general rating and existing tags</span>
+            (compliments or complaints) as a default mechanism to help users
+            provide their feedback. With only 3-4 clicks, we maximized output.
+          </p>
+          <p>
+            We understand that sometimes the drivers make riders feel unsafe
+            or annoyed, so we provide an opportunity for riders to
+            <span class="highlight highlight-t3">blacklist</span>
+            these drivers. Next time, the system will avoid assigning this
+            driver to you
           </p>
         </div>
         <div class="subgroup">
-          <h4 id="runmeetings">Run meetings efficiently</h4>
-          <p>
-            When I was doing school projects, meetings usually went longer than
-            expected. In the industry, especially for a remote team, with
-            everyone’s busy schedules, we had to plan and facilitate meetings
-            efficiently. Setting a clear goal for each meeting, keeping the
-            agenda on the whiteboard to put everyone on the same page would be
-            very helpful.
-          </p>
+          <h4 id="finalDesign" class="bottom-margin">Final Design</h4>
+          <img class="img-responsive full-img bottom-margin top-margin"
+            src="../../assets/works/t3/before the ride divider@2x.png" alt="" />
         </div>
-      </section>
-    </div>
+        <div class="subgroup">
+          <div class="row feature-row">
+            <div class="col-xs-12 col-sm-6 col-md-5 col-lg-5">
+              <video autoplay muted loop class="video-features">
+                <source src="../../assets/works/t3/onboarding1.mov" />
+              </video>
+            </div>
 
-    <a href="" id="template-to-top"
-      ><i class="fa fa-chevron-up" aria-hidden="true"></i
-    ></a>
+            <div class="col-xs-12 col-sm-6 col-md-7 col-lg-7">
+              <h5 class="video-feature-title video-feature-title-photos">
+                On Boarding
+              </h5>
 
-    <div class="container-fluid">
-      <div class="row footer-row">
-        <div class="footer col-xs-12 col-sm-12 col-md-12 col-lg-12">
-          <p>
-            <a class="hvr-underline-from-left" href="../home.html#my-work"
-              >All</a
-            >
-            /
-            <a class="hvr-underline-from-left" href="./selfhelp.html"
-              >Selfhelp</a
-            >
-            /
-            <a class="selected-footer" href="./t3.html">T3</a> /
-            <a class="hvr-underline-from-left" href="./hulu.html">Hulu</a> /
+              <div class="video-feature-content">
+                <ul>
+                  <li>
+                    Help riders understand T3 Go competitive advantages at the
+                    beginning phase.
+                  </li>
+                  <li>
+                    Comprehensive driver screening and evaluation, including
+                    real-time identification. Drivers are periodically asked
+                    to take a selfie, which T3 Go matches against their
+                    on-file identification to make sure the driver is still
+                    eligible to drive.
+                  </li>
+                  <li>
+                    Elevated In-vehicle safety devices (3 SOS Buttons and 1
+                    camera).
+                  </li>
+                  <li>
+                    High quality service.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
 
-            <a class="hvr-underline-from-left" href="./petstay.html">Petstay</a>
-            /
-          </p>
-          <br />
-          <br />
-          <p class="footer-text">Designed and Handcoded with ♥ and ♫</p>
-        </div>
-        <div class="footer-icons col-xs-12 col-sm-12 col-md-12 col-lg-12">
-          <p>
-            <a
-              href="https://www.linkedin.com/in/amber-weng-908655a2/"
-              target="_blank"
-              ><i class="fa fa-linkedin fa-lg" aria-hidden="true"></i
-            ></a>
-            <a href="mailto:amberweng67@gmail.com" target="_blank"
-              ><i class="fa fa-envelope-o fa-lg" aria-hidden="true"></i
-            ></a>
-          </p>
-          <br />
-          <p class="footer-text-small">Amber Weng © 2020 All Rights Reserved</p>
+          <div class="row feature-row">
+            <div class="col-xs-12 col-sm-6 col-md-7 col-lg-7">
+              <h5 class="video-feature-title video-feature-title-photos">
+                Quiet Mode
+              </h5>
+              <div class="video-feature-content">
+                <ul>
+                  <li>
+                    Quiet mode was built for riders who are constantly on the
+                    go and want a little extra comfort, safety and trust.
+                    We’ve all been there: you need a little quiet time but the
+                    driver keeps talking with you, or prefer driver to stay
+                    focused while driving but the driver is facetiming.
+                  </li>
+                  <li>
+                    That’s why this new mode enhances your ride experience,
+                    <span class="highlight highlight-t3">prevent distracted driving in advance:</span>
+                    You can let your drivers know when you’re looking for a
+                    quiet ride so you can stay comfortable on the road.
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-5 col-lg-5">
+              <video autoplay muted loop class="video-features">
+                <source src="../../assets/works/t3/quite mode.mov" />
+              </video>
+            </div>
+          </div>
+          <div class="row feature-row">
+            <div class="col-xs-12 col-sm-6 col-md-5 col-lg-5">
+              <video autoplay muted loop class="video-features">
+                <source src="../../assets/works/t3/emergency contact.mov" />
+              </video>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-7 col-lg-7">
+              <h5 class="video-feature-title video-feature-title-photos">
+                Emergency Contact
+              </h5>
+
+              <div class="video-feature-content">
+                <ul>
+                  <li>
+                    When the rider is waiting for the driver, the emergency
+                    contact card will pop-up.
+                    <span class="highlight highlight-t3">Set up your trusted contacts and create reminders to
+                      share your trip status with friends and family in real
+                      time.</span>
+                  </li>
+                  <li>
+                    You can also setup next time, the system will highlight
+                    safety center to remind riders to complete it.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="row feature-row">
+            <div class="col-xs-12 col-sm-6 col-md-7 col-lg-7">
+              <h5 class="video-feature-title video-feature-title-photos">
+                Info Card
+              </h5>
+              <div class="video-feature-content">
+                <ul>
+                  <li>
+                    The app will surface your
+                    <span class="highlight highlight-t3">live location, vehicle information and driver
+                      information</span>
+                    which you can quickly share with your family and friends.
+                    Before you hop in, take a second to double-check the app
+                    for your driver’s information to make sure you get into
+                    the right car.
+                  </li>
+                  <li>
+                    If you have trouble finding the right car, you can either
+                    call driver or text him. Of course, your
+                    <span class="highlight highlight-t3">phone number is private</span>, drivers will not see your phone
+                    number when you call
+                    through the app.
+                  </li>
+                  <li>
+                    <span class="highlight highlight-t3">In-vehicle safety devices</span>
+                    are presented on this card which would help you to know
+                    how to use these devices if something unexpected happens.
+                  </li>
+                  <li>
+                    Driver info card will lead you to the driver profile to
+                    view detailed driver experience, driving record and
+                    compliments. Frequent comments are
+                    <span class="highlight highlight-t3">demonstrated as bullet comments.</span>
+                  </li>
+                  <li>
+                    Vehicle page introduces car mode, mileage and
+                    <span class="highlight highlight-t3">accident record</span>
+                    with exterior and interior photos.
+                  </li>
+                  <li>
+                    The rest of info card could display banner ads, event
+                    promotions or new features.
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-5 col-lg-5">
+              <video autoplay muted loop class="video-features">
+                <source src="../../assets/works/t3/info card.mov" />
+              </video>
+            </div>
+          </div>
+          <img class="img-responsive full-img bottom-margin" src="../../assets/works/t3/during the ride divider@2x.png"
+            alt="" />
+          <div class="row feature-row">
+            <div class="col-xs-12 col-sm-6 col-md-5 col-lg-5">
+              <video autoplay muted loop class="video-features">
+                <source src="../../assets/works/t3/ride card.mov" />
+              </video>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-7 col-lg-7">
+              <h5 class="video-feature-title video-feature-title-photos">
+                Ride Card
+              </h5>
+              <div class="video-feature-content">
+                <ul>
+                  <li>
+                    Our guidelines were developed to help make every
+                    experience
+                    <span class="highlight highlight-t3">feel safe, respectful, and positive.</span>
+                    On every trip, you can
+                    <span class="highlight highlight-t3">tap safety center</span>
+                    and get help whenever you need it.
+                  </li>
+                  <li>
+                    Next to safety center is status card which tells you
+                    <span class="highlight highlight-t3">in-vehicle safety devices are working normally.</span>
+                  </li>
+                  <li>
+                    From 11 PM to 5 AM, the app displays a floating banner to
+                    remind that you are<span class="highlight highlight-t3">riding at late night, please keep
+                      alert.</span>
+                  </li>
+                  <li>
+                    Arrival time and destination are placed on the top of the
+                    ride card.
+                  </li>
+                  <li>
+                    You can use the
+                    <span class="highlight highlight-t3">in-app emergency button</span>
+                    to call the police to get help if you need it. The app
+                    displays your location and trip details, so you can
+                    quickly
+                    <span class="highlight highlight-t3">share</span>
+                    them with the police dispatcher or your family and
+                    friends.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="row feature-row">
+            <div class="col-xs-12 col-sm-6 col-md-7 col-lg-7">
+              <h5 class="video-feature-title video-feature-title-photos">
+                Alert
+              </h5>
+              <div class="video-feature-content">
+                <ul>
+                  <li>
+                    By using sensors and GPS data, T3 Go can help detect if a
+                    trip goes to an
+                    <span class="highlight highlight-t3">unusually route</span>
+                    or the car
+                    <span class="highlight highlight-t3">stays in one place</span>
+                    for a very long time. If we notice anything out of the
+                    ordinary, we’ll send an
+                    <span class="highlight highlight-t3">urgent alert</span>
+                    to you and you can also provide feedback to us if the
+                    alert is not accurate.
+                  </li>
+                  <li>
+                    You can check details about this alert or active
+                    protection system. When you tap “active”, we will
+                    <span class="highlight highlight-t3">contact the police and your emergency contact</span>.
+                  </li>
+                  <li>
+                    From 11 PM to 5 AM, the app displays a floating banner to
+                    remind that you are riding at late night, please keep
+                    alert.
+                  </li>
+                  <li>
+                    Arrival time and destination are placed on the top of the
+                    ride card.
+                  </li>
+                  <li>
+                    You can use the in-app emergency button to call the police
+                    to get help if you need it. The app displays your location
+                    and trip details, so you can quickly share them with the
+                    police dispatcher or your family and friends.
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-5 col-lg-5">
+              <video autoplay muted loop class="video-features">
+                <source src="../../assets/works/t3/alert.mov" />
+              </video>
+            </div>
+          </div>
+          <img class="img-responsive full-img bottom-margin" src="../../assets/works/t3/after the ride divider@2x.png"
+            alt="" />
+          <div class="row feature-row">
+            <div class="col-xs-12 col-sm-6 col-md-5 col-lg-5">
+              <video autoplay muted loop class="video-features">
+                <source src="../../assets/works/t3/rating.mov" />
+              </video>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-7 col-lg-7">
+              <h5 class="video-feature-title video-feature-title-photos">
+                Rating
+              </h5>
+              <div class="video-feature-content">
+                <ul>
+                  <li>
+                    Upon the completion of a ride, we use witty remarks to
+                    encourage users to provide ratings and comments.
+                  </li>
+                  <li>
+                    If positive, you proceed to recognize and
+                    <span class="highlight highlight-t3">select the positive labels of the ride.</span>
+                    The process of leaving a negative rating for a ride works
+                    much in the same way as when leaving a positive rating.
+                    You are also able to add your
+                    <span class="highlight highlight-t3">own critique</span>,
+                    if not available in the predefined list.
+                  </li>
+                  <li>
+                    You now have the option to
+                    <span class="highlight highlight-t3">‘block’ a driver</span>, and you will not match with that
+                    driver again.
+                  </li>
+                  <li>
+                    Every piece of feedback is valuable to both the driver for
+                    performance improvement, and to T3 Go as a company. The
+                    selections in both positive and negative help to build up
+                    the profile of the driver, influencing the match system.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+    </section>
+  </div>
+
+  <img class="img-responsive full-img bottom-margin top-margin" src="../../assets/works/t3/divider what I learn@2x.png"
+    alt="" />
+
+  <div class="col-lg-7 col-md-7 col-sm-10 col-xs-12 col-centered main-content">
+    <section id="retrospective" class="group" data-aos="fade-up" data-aos-duration="600">
+      <h6></h6>
+      <br />
+      <h3>Retrospective</h3>
+      <hr class="hr-t3" />
+      <div class="subgroup">
+        <h4 id="balance">Balance business needs and user needs</h4>
+        <p>
+          From this project, I learned about the importance of gathering
+          requirements from the development team and stakeholders. But
+          sometimes what stakeholders want doesn’t mean anybody else will. We
+          need to ground stakeholders and team in reality with empirical
+          evidence. We must turn assumptions into facts.
+        </p>
+      </div>
+      <div class="subgroup">
+        <h4 id="runmeetings">Run meetings efficiently</h4>
+        <p>
+          When I was doing school projects, meetings usually went longer than
+          expected. In the industry, especially for a remote team, with
+          everyone’s busy schedules, we had to plan and facilitate meetings
+          efficiently. Setting a clear goal for each meeting, keeping the
+          agenda on the whiteboard to put everyone on the same page would be
+          very helpful.
+        </p>
+      </div>
+    </section>
+  </div>
+
+  <a href="" id="template-to-top"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
+
+  <div class="container-fluid">
+    <div class="row footer-row">
+      <div class="footer col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <p>
+          <a class="hvr-underline-from-left" href="../home.html#my-work">All</a>
+          /
+          <a class="hvr-underline-from-left" href="./selfhelp.html">Selfhelp</a>
+          /
+          <a class="selected-footer" href="./t3.html">T3</a>
+          /
+          <a class="hvr-underline-from-lef" href="./100-day-challenge.html">100-Day Challenge</a>
+          /
+          <a class="hvr-underline-from-left" href="./hulu.html">Hulu</a>
+          /
+        </p>
+        <br />
+        <br />
+        <p class="footer-text">Designed and Handcoded with ♥ and ♫</p>
+      </div>
+      <div class="footer-icons col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <p>
+          <a href="https://www.linkedin.com/in/amber-weng-908655a2/" target="_blank"><i class="fa fa-linkedin fa-lg"
+              aria-hidden="true"></i></a>
+          <a href="mailto:amberweng67@gmail.com" target="_blank"><i class="fa fa-envelope-o fa-lg"
+              aria-hidden="true"></i></a>
+        </p>
+        <br />
+        <p class="footer-text-small">Amber Weng © 2020 All Rights Reserved</p>
+      </div>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>
